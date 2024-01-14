@@ -5,6 +5,7 @@
   --padding-mobile-upd: 4%;
   --font-size-mobile: 18px;
   --font-size-icons-mobile: 30px;
+  --font-size-title-mobile: 60px;
 }
 
 * {
@@ -13,15 +14,36 @@
   box-sizing: border-box;
 }
 
+.section-title {
+  font-size: var(--font-size-title-mobile);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding: var(--padding-mobile-upd) 0;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 30px;
+  background-color: var(--color-black);
+}
+
 body {
   font-family: articulat-cf;
   font-size: var(--font-size-mobile);
   min-height: 300vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -34,7 +56,7 @@ body {
 
 .header-background-photo {
   width: 60%;
-  height: 100%;
+  height: 100vh;
   background-image: url(photos/header-photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,7 +65,7 @@ body {
 
 .header-background-color {
   width: 40%;
-  height: 100%;
+  height: 100vh;
   background-image: url(photos/bgNoise2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,7 +191,7 @@ body {
 
 .social-media-links__container {
   position: absolute;
-  top: 50%;
+  top: 50vh;
   right: var(--padding-mobile-side);
   transform: translateY(-50%);
 }
@@ -214,7 +236,7 @@ body {
   margin: var(--padding-mobile-side) var(--padding-mobile-side);
   padding: var(--padding-mobile-upd) 0;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: var(--font-size-title-mobile);
   text-align: center;
   position: relative;
 }
@@ -254,4 +276,46 @@ body {
   color: var(--color-black);
   padding: 8px 12px;
   border: 2px solid black;
+}
+
+.about-us-background-photo {
+  width: 100%;
+  height: 35vh;
+  background-image: url(photos/vodka-about-mobile.png);
+  background-size: cover;
+  background-position: center;
+  margin: var(--padding-mobile-side) 0;
+}
+
+.about-us-text-content {
+  padding: var(--padding-mobile-side) var(--padding-mobile-side);
+}
+
+.about-first-text {
+  margin: var(--padding-mobile-side) 0;
+  text-transform: uppercase;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 24px;
+}
+
+.about-second-text {
+  margin: var(--padding-mobile-side) 0;
+  text-transform: uppercase;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 24px;
+}
+
+.read-more--button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 8px 12px;
+  border: 2px solid black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
 }
