@@ -209,3 +209,47 @@ body {
 .social-media__link a {
   color: var(--color-black);
 }
+
+.site-title {
+  margin: var(--padding-mobile-side) var(--padding-mobile-side);
+  padding: var(--padding-mobile-upd) 0;
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.site-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 30px;
+  background-color: var(--color-black);
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy--button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 8px 12px;
+  margin-right: 20px;
+  border: 2px solid black;
+}
+
+.contact--button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
+  padding: 8px 12px;
+  border: 2px solid black;
+}
