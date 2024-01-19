@@ -366,7 +366,9 @@ body {
   min-height: 100vh;
   background-color: var(--color-black);
 }
-
+.contact img {
+  display: none;
+}
 .contact-background-photo {
   height: 45vh;
   transform: translateY(-32%);
@@ -622,7 +624,7 @@ body {
   .product-background-photo {
     width: 30%;
     height: 100vh;
-    background-image: url(photos/vodka-about.png);
+    background-image: url(photos/productBg.png);
     background-size: cover;
     background-position: center;
     margin: 0 0;
@@ -638,6 +640,7 @@ body {
   .product-text-content {
     padding: 0 var(--padding-desktop-side) var(--padding-desktop-upd) 5%;
     width: 100%;
+    height: 100vh;
     position: relative;
   }
 
@@ -670,7 +673,7 @@ body {
     border: 2px solid black;
     position: absolute;
     left: 5%;
-    bottom: var(--padding-desktop-upd);
+    bottom: 22%;
     transform: translate(0);
     /* transform: none; */
     right: auto;
@@ -678,24 +681,49 @@ body {
   }
 
   .contact {
-    position: relative;
-    padding: var(--padding-mobile-side) var(--padding-mobile-side);
-    min-height: 100vh;
+    padding: 0 0;
     background-color: var(--color-black);
   }
 
   .contact-background-photo {
-    height: 45vh;
-    transform: translateY(-32%);
+    height: 100vh;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    width: 25%;
+    transform: translateY(0);
     background-image: url(photos/contactBg.png);
     background-size: cover;
     background-position: center;
-    margin: var(--padding-mobile-side) 0;
+    margin: 0 0;
+  }
+
+  .contact img {
+    position: absolute;
+    top: var(--padding-desktop-upd);
+    left: var(--padding-desktop-side);
+    height: 5%;
+    z-index: 1;
+    display: block;
   }
 
   .contact-text-content {
     color: var(--color-white);
-    transform: translateY(-24%);
+    transform: translateY(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact .section-title {
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    width: 35%;
+    text-align: left;
+    transform: translateY(-20%);
   }
 
   .contact .section-title::before {
@@ -703,50 +731,61 @@ body {
   }
 
   .social-media-links__container-contact {
-    width: 100%;
-    position: relative;
+    position: absolute;
+    top: 50vh;
+    left: var(--padding-mobile-side);
+    right: auto;
+    transform: translateY(-50%);
+    width: auto;
   }
 
-  .social-media-links__container-contact::before {
+  .social-media__links-contact {
+    list-style: none;
+    font-size: var(--font-size-icons-mobile);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .social-media-links__container-contact:before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 2px;
-    width: 30px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 2px;
     background-color: var(--color-white);
   }
 
   .social-media-links__container-contact::after {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    height: 2px;
-    width: 30px;
-    background-color: var(--color-white);
+    bottom: -40px;
+    left: 50%;
+    height: 30px;
+    width: 2px;
+    top: auto;
   }
 
-  .social-media__links-contact {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  .social-media__link-contact {
+    margin: 10px 0;
   }
 
-  .social-media__links-contact a {
+  .social-media__link-contact a {
     color: var(--color-white);
-    font-size: var(--font-size-icons-mobile);
-    margin: 0 20px;
   }
 
   .contact-list {
-    margin: calc(var(--padding-mobile-side) * 2) 0;
-    text-align: center;
+    margin: 0 0;
+    text-align: left;
+    position: absolute;
+    bottom: 15%;
+    left: 44%;
   }
 
   .contact-list p {
-    margin: var(--padding-mobile-upd) 0;
+    margin: 0 0;
   }
 }
