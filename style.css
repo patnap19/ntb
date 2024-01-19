@@ -435,22 +435,15 @@ body {
 
 @media (min-width: 1024px) {
   .section-title {
-    font-size: var(--font-size-title-mobile);
+    font-size: var(--font-size-title-desktop);
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     position: relative;
-    padding: var(--padding-mobile-upd) 0;
+    padding: var(--padding-desktop-upd) 0;
   }
 
   .section-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 2px;
-    width: 30px;
-    background-color: var(--color-black);
+    display: none;
   }
 
   body {
@@ -530,7 +523,7 @@ body {
     font-size: var(--font-size-title-desktop);
     text-align: left;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
   }
@@ -544,7 +537,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    bottom: var(--padding-desktop-side);
+    bottom: 15%;
     width: 58%;
     right: 0;
   }
@@ -569,33 +562,41 @@ body {
     border: 2px solid black;
   }
 
+  .about-us {
+    display: flex;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+  }
+
   .about-us-background-photo {
-    width: 100%;
-    height: 35vh;
-    background-image: url(photos/vodka-about-mobile.png);
+    width: 30%;
+    height: 100vh;
+    background-image: url(photos/vodka-about.png);
     background-size: cover;
     background-position: center;
-    margin: var(--padding-mobile-side) 0;
+    margin: 0 0;
   }
 
   .about-us-text-content {
-    padding: var(--padding-mobile-side) var(--padding-mobile-side);
+    padding: 0 5% var(--padding-desktop-upd) var(--padding-desktop-side);
+    width: 70%;
+    position: relative;
   }
 
   .about-first-text {
-    margin: var(--padding-mobile-side) 0;
+    margin: 0 0;
     text-transform: uppercase;
     text-align: justify;
-    text-align-last: center;
-    line-height: 24px;
+    text-align-last: right;
+    line-height: 36px;
   }
 
   .about-second-text {
     margin: var(--padding-mobile-side) 0;
     text-transform: uppercase;
     text-align: justify;
-    text-align-last: center;
-    line-height: 24px;
+    text-align-last: right;
+    line-height: 36px;
   }
 
   .read-more--button {
@@ -603,48 +604,77 @@ body {
     text-decoration: none;
     color: var(--color-white);
     background-color: var(--color-black);
-    padding: 8px 12px;
+    padding: 12px 24px;
     border: 2px solid black;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
+    position: absolute;
+    right: 7%;
+    bottom: var(--padding-desktop-upd);
+    transform: translate(0);
+    /* transform: none; */
+    left: auto;
+    display: block;
+  }
+
+  .product {
+    display: flex;
   }
 
   .product-background-photo {
-    width: 100%;
-    height: 35vh;
-    background-image: url(photos/product-mobile.png);
+    width: 30%;
+    height: 100vh;
+    background-image: url(photos/vodka-about.png);
     background-size: cover;
     background-position: center;
-    margin: var(--padding-mobile-side) 0;
+    margin: 0 0;
   }
 
   .product-background-color {
     background-image: url(photos/bgNoise2.png);
     background-size: cover;
     background-position: center;
+    width: 70%;
   }
 
   .product-text-content {
-    padding: var(--padding-mobile-side) var(--padding-mobile-side) 24%
-      var(--padding-mobile-side);
+    padding: 0 var(--padding-desktop-side) var(--padding-desktop-upd) 5%;
+    width: 100%;
+    position: relative;
+  }
+
+  .product-text-content .section-title {
+    text-align: left;
   }
 
   .product-first-text {
-    margin: var(--padding-mobile-side) 0;
+    margin: 0 0;
     text-transform: uppercase;
     text-align: justify;
-    text-align-last: center;
-    line-height: 24px;
+    text-align-last: left;
+    line-height: 36px;
   }
 
   .product-second-text {
     margin: var(--padding-mobile-side) 0;
     text-transform: uppercase;
     text-align: justify;
-    text-align-last: center;
-    line-height: 24px;
+    text-align-last: left;
+    line-height: 36px;
+  }
+
+  .product-text-content .read-more--button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    padding: 12px 24px;
+    border: 2px solid black;
+    position: absolute;
+    left: 5%;
+    bottom: var(--padding-desktop-upd);
+    transform: translate(0);
+    /* transform: none; */
+    right: auto;
+    display: block;
   }
 
   .contact {
