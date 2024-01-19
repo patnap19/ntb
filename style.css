@@ -3,7 +3,11 @@
   --color-white: rgb(248, 248, 248);
   --padding-mobile-side: 8%;
   --padding-mobile-upd: 4%;
+  --padding-desktop-side: 9%;
+  --padding-desktop-upd: 5%;
   --font-size-mobile: 18px;
+  --font-size-desktop: 24px;
+  --font-size-title-desktop: 96px;
   --font-size-icons-mobile: 30px;
   --font-size-title-mobile: 60px;
 }
@@ -427,4 +431,292 @@ body {
 
 .contact-list p {
   margin: var(--padding-mobile-upd) 0;
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: var(--font-size-title-mobile);
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: var(--padding-mobile-upd) 0;
+  }
+
+  .section-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 30px;
+    background-color: var(--color-black);
+  }
+
+  body {
+    font-size: var(--font-size-desktop);
+  }
+
+  .header-container {
+    height: 100vh;
+  }
+
+  .header-background {
+    display: flex;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-background-photo {
+    width: 36%;
+  }
+
+  .header-background-color {
+    width: 65%;
+  }
+
+  .header-content {
+    padding: var(--padding-desktop-upd) var(--padding-desktop-side);
+  }
+
+  .nav-bar {
+    height: 30px;
+    width: 100%;
+  }
+
+  .logo-ntb {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    height: 30px;
+    width: 100%;
+    padding: 0 0;
+    z-index: 1;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .close-nav-btn__container {
+    display: none;
+  }
+
+  .nav__elements {
+    width: 100%;
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__element {
+    margin: 0 0 0 10%;
+    text-align: center;
+  }
+
+  .menu-burger-container {
+    display: none;
+  }
+
+  .site-title {
+    width: 35%;
+    margin: 0 0;
+    padding: 0 0;
+    text-transform: uppercase;
+    font-size: var(--font-size-title-desktop);
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .site-title::before {
+    display: none;
+  }
+
+  .buttons__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    bottom: var(--padding-desktop-side);
+    width: 58%;
+    right: 0;
+  }
+
+  .buy--button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    padding: 12px 24px;
+    margin-right: 20px;
+    border: 2px solid black;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .contact--button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 12px 24px;
+    border: 2px solid black;
+  }
+
+  .about-us-background-photo {
+    width: 100%;
+    height: 35vh;
+    background-image: url(photos/vodka-about-mobile.png);
+    background-size: cover;
+    background-position: center;
+    margin: var(--padding-mobile-side) 0;
+  }
+
+  .about-us-text-content {
+    padding: var(--padding-mobile-side) var(--padding-mobile-side);
+  }
+
+  .about-first-text {
+    margin: var(--padding-mobile-side) 0;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 24px;
+  }
+
+  .about-second-text {
+    margin: var(--padding-mobile-side) 0;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 24px;
+  }
+
+  .read-more--button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    padding: 8px 12px;
+    border: 2px solid black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+  }
+
+  .product-background-photo {
+    width: 100%;
+    height: 35vh;
+    background-image: url(photos/product-mobile.png);
+    background-size: cover;
+    background-position: center;
+    margin: var(--padding-mobile-side) 0;
+  }
+
+  .product-background-color {
+    background-image: url(photos/bgNoise2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-text-content {
+    padding: var(--padding-mobile-side) var(--padding-mobile-side) 24%
+      var(--padding-mobile-side);
+  }
+
+  .product-first-text {
+    margin: var(--padding-mobile-side) 0;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 24px;
+  }
+
+  .product-second-text {
+    margin: var(--padding-mobile-side) 0;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 24px;
+  }
+
+  .contact {
+    position: relative;
+    padding: var(--padding-mobile-side) var(--padding-mobile-side);
+    min-height: 100vh;
+    background-color: var(--color-black);
+  }
+
+  .contact-background-photo {
+    height: 45vh;
+    transform: translateY(-32%);
+    background-image: url(photos/contactBg.png);
+    background-size: cover;
+    background-position: center;
+    margin: var(--padding-mobile-side) 0;
+  }
+
+  .contact-text-content {
+    color: var(--color-white);
+    transform: translateY(-24%);
+  }
+
+  .contact .section-title::before {
+    background-color: var(--color-white);
+  }
+
+  .social-media-links__container-contact {
+    width: 100%;
+    position: relative;
+  }
+
+  .social-media-links__container-contact::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 30px;
+    background-color: var(--color-white);
+  }
+
+  .social-media-links__container-contact::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 30px;
+    background-color: var(--color-white);
+  }
+
+  .social-media__links-contact {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media__links-contact a {
+    color: var(--color-white);
+    font-size: var(--font-size-icons-mobile);
+    margin: 0 20px;
+  }
+
+  .contact-list {
+    margin: calc(var(--padding-mobile-side) * 2) 0;
+    text-align: center;
+  }
+
+  .contact-list p {
+    margin: var(--padding-mobile-upd) 0;
+  }
 }
