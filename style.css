@@ -371,6 +371,10 @@ body {
   min-height: 100vh;
   background-color: var(--color-black);
 }
+
+.contact .section-title {
+  line-height: 60px;
+}
 .contact img {
   display: none;
 }
@@ -533,6 +537,7 @@ body {
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
+    line-height: 100%;
   }
 
   .site-title::before {
@@ -691,7 +696,7 @@ body {
   }
 
   .contact .section-title {
-    line-height: 60px;
+    line-height: 100%;
   }
 
   .contact-background-photo {
