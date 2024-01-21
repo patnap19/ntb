@@ -29,7 +29,7 @@
 .section-title::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
@@ -58,7 +58,7 @@ body {
 }
 
 .header-background-photo {
-  width: 60%;
+  width: 75%;
   height: 100vh;
   background-image: url(photos/header-photo.jpg);
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body {
 }
 
 .header-background-color {
-  width: 40%;
+  width: 25%;
   height: 100vh;
   background-image: url(photos/bgNoise2.png);
   background-repeat: no-repeat;
@@ -89,7 +89,8 @@ body {
 }
 
 .logo-ntb {
-  height: 100%;
+  /* height: 100%; */
+  display: none;
 }
 
 .main-nav {
@@ -159,9 +160,10 @@ body {
 .menu-burger-container {
   width: 30px;
   height: 30px;
-  position: fixed;
+  position: absolute;
   right: var(--padding-mobile-side);
   z-index: 10;
+  /* background-color: var(--color-white); */
 }
 
 .burger-bar {
@@ -237,7 +239,8 @@ body {
 }
 
 .site-title {
-  margin: var(--padding-mobile-side) var(--padding-mobile-side);
+  margin: var(--padding-mobile-side) var(--padding-mobile-side) 1%
+    var(--padding-mobile-side);
   padding: var(--padding-mobile-upd) 0;
   text-transform: uppercase;
   font-size: var(--font-size-title-mobile);
@@ -249,7 +252,7 @@ body {
 .site-title::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
@@ -289,7 +292,7 @@ body {
   background-image: url(photos/vodka-about-mobile.png);
   background-size: cover;
   background-position: center;
-  margin: var(--padding-mobile-side) 0;
+  margin-top: var(--padding-mobile-side);
 }
 
 .about-us-text-content {
@@ -335,7 +338,7 @@ body {
 }
 
 .product .section-title {
-  margin-top: var(--padding-desktop-upd);
+  /* margin-top: var(--padding-desktop-upd); */
 }
 
 .product-background-color {
