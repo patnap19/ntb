@@ -690,6 +690,10 @@ body {
     background-color: var(--color-black);
   }
 
+  .contact .section-title {
+    line-height: 60px;
+  }
+
   .contact-background-photo {
     height: 100vh;
     position: absolute;
