@@ -90,6 +90,13 @@ body {
   margin: 0 auto;
   font-family: articulat-cf;
   font-size: 18px;
+  transition: var(--transition-time);
+  cursor: pointer;
+}
+
+.popup--button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .header-container {
@@ -573,6 +580,55 @@ body {
 
   body {
     font-size: var(--font-size-desktop);
+  }
+
+  .popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.5);
+    z-index: 1000;
+  }
+
+  .popup-content {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5% 5%;
+    background-color: var(--color-white);
+  }
+
+  .popup-title {
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .popup-ask {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4%;
+  }
+
+  .popup-content .buttons-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .popup--button {
+    border: 2px solid var(--color-black);
+    text-transform: uppercase;
+    padding: 9px 24px;
+    margin: 0 auto;
+    font-family: articulat-cf;
+    font-size: 18px;
   }
 
   .header-container {
