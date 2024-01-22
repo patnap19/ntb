@@ -72,3 +72,10 @@ contactBtnInHeader.addEventListener("click", (e) => {
     behavior: "smooth",
   });
 });
+
+const popupButton = document.querySelector(".popup--button");
+const popup = document.querySelector(".popup-background");
+
+popupButton.addEventListener("click", () => {
+  popup.style.display = "none";
+});
