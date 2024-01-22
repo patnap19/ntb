@@ -10,6 +10,7 @@
   --font-size-title-desktop: 96px;
   --font-size-icons-mobile: 30px;
   --font-size-title-mobile: 60px;
+  --transition-time: 0.2s;
 }
 
 * {
@@ -154,7 +155,26 @@ body {
 .nav__element a {
   color: var(--color-black);
   text-decoration: none;
+  padding-bottom: 5px;
   text-transform: uppercase;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav__element a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-black);
+  transition: var(--transition-time);
+}
+
+.nav__element a:hover:after {
+  left: 0;
 }
 
 .menu-burger-container {
@@ -236,6 +256,13 @@ body {
 
 .social-media__link a {
   color: var(--color-black);
+  display: block;
+  transition: var(--transition-time);
+  /* transform: rotate(60deg); */
+}
+
+.social-media__link a:hover {
+  transform: scale(1.1);
 }
 
 .site-title {
@@ -274,11 +301,12 @@ body {
   padding: 8px 12px;
   margin-right: 20px;
   border: 2px solid black;
-  pointer-events: none;
-  cursor: default;
+  /* pointer-events: none; */
+  /* cursor: default; */
+  transition: var(--transition-time);
 }
 
-.buy--button::hover {
+.buy--button:hover {
   background-color: var(--color-white);
 }
 
@@ -288,6 +316,12 @@ body {
   color: var(--color-black);
   padding: 8px 12px;
   border: 2px solid black;
+  transition: var(--transition-time);
+}
+
+.contact--button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .about-us-background-photo {
@@ -330,6 +364,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
+  transition: var(--transition-time);
+}
+
+.about-us .read-more--button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .product-background-photo {
@@ -366,6 +406,11 @@ body {
   text-align: justify;
   text-align-last: center;
   line-height: 24px;
+}
+
+.product .read-more--button:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .contact {
@@ -436,6 +481,12 @@ body {
   color: var(--color-white);
   font-size: var(--font-size-icons-mobile);
   margin: 0 10px;
+  transition: var(--transition-time);
+  display: block;
+}
+
+.social-media__link-contact a:hover {
+  transform: scale(1.1);
 }
 
 .contact .fa-facebook {
@@ -543,7 +594,7 @@ body {
   }
 
   .site-title {
-    width: 35%;
+    width: 30%;
     margin: 0 0;
     padding: 0 0;
     text-transform: uppercase;
