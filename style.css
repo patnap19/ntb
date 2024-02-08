@@ -101,6 +101,11 @@ body {
   text-decoration: none;
 }
 
+.popup--button.no--btn {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
 .popup--button:hover {
   background-color: var(--color-black);
   color: var(--color-white);
