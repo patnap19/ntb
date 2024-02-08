@@ -76,6 +76,7 @@ contactBtnInHeader.addEventListener("click", (e) => {
 const popupButton = document.querySelector(".popup--button");
 const popup = document.querySelector(".popup-background");
 
-popupButton.addEventListener("click", () => {
+popupButton.addEventListener("click", (e) => {
+  e.preventDefault();
   popup.style.display = "none";
 });
