@@ -27,6 +27,10 @@
   padding: var(--padding-mobile-upd) 0;
 }
 
+bold {
+  font-weight: 700;
+}
+
 .section-title::before {
   content: "";
   position: absolute;
