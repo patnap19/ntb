@@ -568,6 +568,8 @@ body {
 
 .contact-list p {
   margin: var(--padding-mobile-upd) 0;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .privacy-policy {
