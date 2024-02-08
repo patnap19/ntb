@@ -761,12 +761,12 @@ body {
   .about-us {
     display: flex;
     flex-direction: row-reverse;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .about-us-background-photo {
     width: 30%;
-    height: 100vh;
+    height: 80vh;
     background-image: url(photos/vodka-about.png);
     background-size: cover;
     background-position: center;
@@ -992,4 +992,7 @@ body {
     bottom: 15%;
     right: 10%;
   }
+}
+
+@media (min-height: 1080px) {
 }
