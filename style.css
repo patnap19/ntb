@@ -70,6 +70,16 @@ body {
   background-color: var(--color-white);
 }
 
+.popup-content::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  border: 2px solid var(--color-black);
+  top: 5%;
+  left: 2.5%;
+}
+
 .popup-title {
   text-transform: uppercase;
   font-size: 50px;
