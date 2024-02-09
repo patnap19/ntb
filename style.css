@@ -73,11 +73,11 @@ body {
 .popup-content::before {
   content: "";
   position: absolute;
-  width: 95%;
+  width: 90%;
   height: 90%;
   border: 2px solid var(--color-black);
   top: 5%;
-  left: 2.5%;
+  left: 5%;
   z-index: -1;
 }
 
@@ -629,6 +629,12 @@ body {
     transform: translate(-50%, -50%);
     padding: 4% 5%;
     background-color: var(--color-white);
+  }
+
+  .popup-content::before {
+    width: 95%;
+
+    left: 2.5%;
   }
 
   .popup-title {
