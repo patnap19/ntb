@@ -168,7 +168,9 @@ body {
 
 .logo-ntb {
   /* height: 100%; */
-  display: none;
+  /* display: none; */
+  position: absolute;
+  height: 4%;
 }
 
 .main-nav {
@@ -417,19 +419,19 @@ body {
 .about-first-text {
   margin: 0 0 var(--padding-mobile-side) 0;
   text-transform: uppercase;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
+  /* text-align-last: center; */
   line-height: 24px;
-  word-spacing: 8px;
+  /* word-spacing: 8px; */
 }
 
 .about-second-text {
   margin: var(--padding-mobile-side) 0;
   text-transform: uppercase;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
+  /* text-align-last: center; */
   line-height: 24px;
-  word-spacing: 8px;
+  /* word-spacing: 8px; */
 }
 
 .read-more--button {
@@ -474,17 +476,17 @@ body {
 .product-first-text {
   margin: 0 0 var(--padding-mobile-side) 0;
   text-transform: uppercase;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
+  /* text-align-last: center; */
   line-height: 24px;
-  word-spacing: 8px;
+  /* word-spacing: 8px; */
 }
 
 .product-second-text {
   margin: var(--padding-mobile-side) 0;
   text-transform: uppercase;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
+  /* text-align-last: center; */
   line-height: 24px;
 }
 
@@ -694,7 +696,14 @@ body {
   }
 
   .logo-ntb {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    height: 10%;
+    left: 8%;
+    transform: translateX(-50%);
+    /* width: 192px; */
+    /* left: -50%; */
+    display: block;
   }
 
   .main-nav {
@@ -802,16 +811,16 @@ body {
   .about-first-text {
     margin: 0 0;
     text-transform: uppercase;
-    text-align: justify;
-    text-align-last: right;
+    text-align: right;
+    /* text-align-last: right; */
     line-height: 36px;
   }
 
   .about-second-text {
     margin: var(--padding-mobile-side) 0;
     text-transform: uppercase;
-    text-align: justify;
-    text-align-last: right;
+    text-align: right;
+    /* text-align-last: right; */
     line-height: 36px;
   }
 
@@ -865,16 +874,16 @@ body {
   .product-first-text {
     margin: 0 0;
     text-transform: uppercase;
-    text-align: justify;
-    text-align-last: left;
+    text-align: left;
+    /* text-align-last: left; */
     line-height: 36px;
   }
 
   .product-second-text {
     margin: var(--padding-mobile-side) 0;
     text-transform: uppercase;
-    text-align: justify;
-    text-align-last: left;
+    text-align: left;
+    /* text-align-last: left; */
     line-height: 36px;
   }
 
